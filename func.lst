@@ -1,0 +1,28 @@
+     1                                  section	.text
+     2                                  global _func, func
+     3                                  
+     4                                  _func:
+     5                                  func:
+     6 00000000 55                      	push ebp
+     7 00000001 89E5                    	mov	ebp, esp
+     8                                  ;	push ebx
+     9                                  
+    10 00000003 8B4508                  	mov	eax, DWORD [ebp+8]	;address of *a to eax
+    11                                  
+    12                                  replace_loop:
+    13 00000006 8A18                    	mov bl, [eax]
+    14 00000008 80FB00                  	cmp bl, 0
+    15 0000000B 740B                    	je exit_loop
+    16 0000000D 80FB61                  	cmp bl, 'a'
+    17 00000010 7503                    	jne increment_loop
+    18 00000012 C6002A                  	mov	BYTE [eax], '*'
+    19                                  
+    20                                  increment_loop:
+    21 00000015 40                         inc eax
+    22 00000016 EBEE                      jmp replace_loop
+    23                                  
+    24                                  exit_loop:
+    25 00000018 31C0                    	xor	eax, eax		; eax = 0
+    26                                  ;	pop ebx
+    27 0000001A 5D                      	pop	ebp
+    28 0000001B C3                      	ret

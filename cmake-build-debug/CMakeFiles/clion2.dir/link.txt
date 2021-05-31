@@ -1,0 +1,1 @@
+/usr/bin/cc -g CMakeFiles/clion2.dir/main.c.o CMakeFiles/clion2.dir/func.asm.o -o clion2 
