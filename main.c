@@ -2,6 +2,7 @@
 #include <stdlib.h>
 
 extern int put_pixel(char* pixels, int x, int y);
+extern int put_thin_bar(char* pixels, int x, int width);
 
 char* read_from_file();
 char* write_to_file(char* buff);
@@ -14,7 +15,11 @@ int main(int argc, char** argv)
     char* pixels = buff + 10;
     pixels = buff + pixels[0];
     // pixels pointer now points to the pixels section of .bmp
-    put_pixel(pixels, 10, 10);
+//    put_pixel(pixels, 20, 20);
+    int ret = put_thin_bar(pixels, 10, 2);
+    printf("%d", ret);
+
+    put_thin_bar(pixels, ret, 2);
 
     write_to_file(buff);
 

@@ -2,12 +2,12 @@ CC=gcc
 ASMBIN=nasm
 
 all : assemble compile link
-assemble : put_pixel.asm
-	$(ASMBIN) -o func.o -f elf -g -l put_pixel.lst put_pixel.asm
+assemble : functions.asm
+	$(ASMBIN) -o functions.o -f elf -g -l functions.lst functions.asm
 compile : assemble main.c
 	$(CC) -m32 -c -g -O0 main.c
 link : compile
-	$(CC) -m32 -g -o program main.o func.o
+	$(CC) -m32 -g -o program main.o functions.o
 run :
 	./program
 gdb :
