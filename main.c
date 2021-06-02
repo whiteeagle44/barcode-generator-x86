@@ -1,15 +1,22 @@
 #include <stdio.h>
 #include <stdlib.h>
 
-//extern int func(char *a);
+extern int put_pixel(char* pixels, int x, int y);
 
-char* readFromFile();
-char* writeToFile(char* buff);
+char* read_from_file();
+char* write_to_file(char* buff);
+
+unsigned int len;
 
 int main(int argc, char** argv)
 {
-    char* buff = readFromFile();
-    writeToFile(buff);
+    char* buff = read_from_file();
+    char* pixels = buff + 10;
+    pixels = buff + pixels[0];
+    // pixels pointer now points to the pixels section of .bmp
+    put_pixel(pixels, 10, 10);
+
+    write_to_file(buff);
 
 
 //    if(argc !=  2)
@@ -24,7 +31,7 @@ int main(int argc, char** argv)
     return 0;
 }
 
-char* readFromFile() {
+char* read_from_file() {
     printf("Reading from file...");
     FILE *imgFile;
     imgFile = fopen("white.bmp", "rb");
@@ -35,7 +42,6 @@ char* readFromFile() {
     }
     else printf("File opened successfully\n");
 
-    unsigned int len;
     fseek(imgFile, 0, SEEK_END); /* move file pointer to end of file */
     len = ftell(imgFile); /* get offset from beginning of the file */
     fseek(imgFile, 0, SEEK_SET); /* move to the beginning of file */
@@ -57,7 +63,7 @@ char* readFromFile() {
     return buff;
 }
 
-char* writeToFile(char* buff) {
+char* write_to_file(char* buff) {
     printf("Opening file to write to...");
     FILE *imgFile;
     imgFile = fopen("output.bmp", "wb");
@@ -68,10 +74,12 @@ char* writeToFile(char* buff) {
     }
     else printf("File to write to opened successfully\n");
 
-    int width =*(int * )( & buff[18] ); // width = 600
-    int height =*(int * )( & buff[22] ); // height = 50
-    int size = ((width * 3 + 3) & ~3) * height + 54;
-    fwrite(buff, size, 1, imgFile);
+//    int width =*(int * )( & buff[18] ); // width = 600
+//    int width = 600;
+//    int height =*(int * )( & buff[22] ); // height = 50
+//    int height = 50;
+    int size = ((600 * 3 + 3) & ~3) * 50 + 54;
+    fwrite(buff, len, 1, imgFile);
     fclose(imgFile);
 
     return buff;
