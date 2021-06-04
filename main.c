@@ -3,6 +3,8 @@
 
 extern int put_pixel(char* pixels, int x, int y);
 extern int put_thin_bar(char* pixels, int x, int width);
+extern int put_thick_bar(char* pixels, int x, int width);
+extern int put_char(char* pixels, int x, int width, char character);
 
 char* read_from_file();
 char* write_to_file(char* buff);
@@ -15,11 +17,17 @@ int main(int argc, char** argv)
     char* pixels = buff + 10;
     pixels = buff + pixels[0];
     // pixels pointer now points to the pixels section of .bmp
-//    put_pixel(pixels, 20, 20);
-    int ret = put_thin_bar(pixels, 10, 2);
-    printf("%d", ret);
+    int ret = put_char(pixels, 10, 10, 'B');
+    if(ret == -1) {
+        printf("Error 1: Text contains characters which cannot be encoded");
+        return 1;
+    }
 
-    put_thin_bar(pixels, ret, 2);
+
+//    put_pixel(pixels, 20, 20);
+//    int ret = put_thick_bar(pixels, 20, 2);
+//    printf("%d", ret);
+//    put_thin_bar(pixels, ret, 2);
 
     write_to_file(buff);
 
