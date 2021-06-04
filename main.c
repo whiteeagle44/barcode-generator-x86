@@ -17,16 +17,24 @@ int main(int argc, char** argv)
     char* pixels = buff + 10;
     pixels = buff + pixels[0];
     // pixels pointer now points to the pixels section of .bmp
-    int ret = put_char(pixels, 10, 10, 'B');
-    if(ret == -1) {
-        printf("Error 1: Text contains characters which cannot be encoded");
-        return 1;
-    }
+//    if(ret == -1) {
+//        printf("Error 1: Text contains characters which cannot be encoded");
+//        return 1;
+//    }
+//    printf("return value: %d ", ret);
+
+    int ret = 10;
+    ret = put_char(pixels, ret, 2, '*');
+    ret = put_char(pixels, ret, 2, 'B');
+    ret = put_char(pixels, ret, 2, 'A');
+    ret = put_char(pixels, ret, 2, 'C');
+    ret = put_char(pixels, ret, 2, 'A');
+    put_char(pixels, ret, 2, '*');
 
 
 //    put_pixel(pixels, 20, 20);
 //    int ret = put_thick_bar(pixels, 20, 2);
-//    printf("%d", ret);
+
 //    put_thin_bar(pixels, ret, 2);
 
     write_to_file(buff);

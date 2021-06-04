@@ -202,10 +202,11 @@ ch_found2:
     push DWORD[ebp+16] ;   int width - width in pixels of narrowest bar
     push DWORD[ebp+12] ;   int x - x coordinate
     push DWORD[ebp+8]  ;   char* pixels - address of pixel array
-    call put_thin_bar ;   put_thin_bar(pixels, x, width)
+    call put_thin_bar  ;   put_thin_bar(pixels, x, width)
     add  esp, 12
     pop  edx
     pop  ecx
+    mov DWORD[ebp+12], eax
 
     jmp  space
 
@@ -219,26 +220,39 @@ draw_thick_bar:
     add  esp, 12
     pop edx
     pop ecx
+    mov DWORD[ebp+12], eax
 
 space:
     shr bx, 1
     cmp bx, 0
-    je  return
+    je  return_value
 
     mov dx, cx        ; we need cx later, so we'll work on a copy
     and dx, bx        ; dx = bx AND cx
     cmp dx, bx
     je  draw_thick_space
+    ; draw thin space:
+    shr bx, 1
+    mov esi, DWORD[ebp+16] ; width
+    add DWORD[ebp+12], esi ; x = x + width
+    jmp ch_found2
 
 draw_thick_space:
     shr bx, 1
+    mov esi, DWORD[ebp+16] ; width
+    imul esi, esi, 2             ; 2 * width
+    add DWORD[ebp+12], esi ; x = x + 2 * width
+    jmp ch_found2
+
+return_value:
+    ; set the proper return value
+    mov eax, 0
+    add eax, DWORD[ebp+12]
+    add eax, DWORD[ebp+16]
 
 return:
     pop edi
     pop esi
     pop ebx
-;    mov eax, 0
-;    add eax, DWORD[ebp+12]
-;    add eax, DWORD[ebp+16]
 	pop	ebp
 	ret
