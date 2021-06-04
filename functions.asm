@@ -2,6 +2,7 @@ global _put_pixel, put_pixel
 global _put_thin_bar, put_thin_bar
 global _put_thick_bar, put_thick_bar
 global _put_char, put_char
+global _encode39, encode39
 
 section .data
 ;used by put_char
@@ -38,6 +39,9 @@ section	.text
     pop ecx
     pop edx
 %endmacro
+
+; used by encode39
+%define STARTING_X 10 ; starting x coordinate of the bar
 
 
 ; int put_pixel(char* pixels, int x, int y);
@@ -153,7 +157,6 @@ put_thick_bar:
 ; return value: x coordinate of the next character
 _put_char:
 put_char:
-
 	push ebp
 	mov	ebp, esp
 	push ebx
@@ -256,3 +259,68 @@ return:
     pop ebx
 	pop	ebp
 	ret
+
+
+; int encode39(char* pixels, int width, char* text);
+; encodes text using Code 39 barcode
+; arguments:
+;	DWORD[ebp+8]:  char* pixels  - address of pixel array
+;   DWORD[ebp+12]: int width  - width in pixels of narrowest bar
+;   DWORD[ebp+16]: char* text  - character to put
+; return value: 0 (OK) or -1 (error, character unsupported)
+_encode39:
+encode39:
+	push ebp
+	mov	ebp, esp
+	push ebx
+
+	mov  edx, STARTING_X
+
+    ; put_char(pixels, x, width, character)
+    push '*'            ; character
+    push DWORD[ebp+12]  ; width
+    push edx     ; x
+    push DWORD[ebp+8]   ; pixels
+    call put_char
+    add  esp, 16
+    mov  edx, eax
+
+    mov ebx, DWORD[ebp+16]
+
+char_loop:
+    mov cl, BYTE[ebx]
+    cmp cl, 0
+    je  ending_char
+
+    ; put_char(pixels, x, width, character)
+    push ecx            ; character
+    push DWORD[ebp+12]  ; width
+    push edx            ; x
+    push DWORD[ebp+8]   ; pixels
+    call put_char
+    add  esp, 12
+    pop  ecx
+    mov  edx, eax
+
+    cmp  eax, -1
+    je   exit
+
+    inc  ebx
+    jmp  char_loop
+
+ending_char:
+    ; put_char(pixels, x, width, character)
+    push '*'            ; character
+    push DWORD[ebp+12]  ; width
+    push edx    ; x
+    push DWORD[ebp+8]   ; pixels
+    call put_char
+    add  esp, 16
+
+set_return_value:
+    xor eax, eax
+
+exit:
+    pop ebx
+    pop	ebp
+    ret

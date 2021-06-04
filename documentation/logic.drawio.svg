@@ -1,0 +1,422 @@
+<svg host="65bd71144e" xmlns="http://www.w3.org/2000/svg" xmlns:xlink="http://www.w3.org/1999/xlink" version="1.1" width="531px" height="1302px" viewBox="-0.5 -0.5 531 1302" content="&lt;mxfile&gt;&lt;diagram id=&quot;HTTdOHOM3bVc9bvnaSgC&quot; name=&quot;Page-1&quot;&gt;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&lt;/diagram&gt;&lt;/mxfile&gt;">
+    <defs/>
+    <g>
+        <rect x="87" y="0" width="320" height="160" fill="#ffffff" stroke="#000000" pointer-events="all"/>
+        <rect x="107" y="10" width="40" height="20" fill="none" stroke="none" pointer-events="all"/>
+        <g transform="translate(-0.5 -0.5)">
+            <switch>
+                <foreignObject style="overflow: visible; text-align: left;" pointer-events="none" width="100%" height="100%" requiredFeatures="http://www.w3.org/TR/SVG11/feature#Extensibility">
+                    <div xmlns="http://www.w3.org/1999/xhtml" style="display: flex; align-items: unsafe center; justify-content: unsafe center; width: 38px; height: 1px; padding-top: 20px; margin-left: 108px;">
+                        <div style="box-sizing: border-box; font-size: 0; text-align: center; ">
+                            <div style="display: inline-block; font-size: 12px; font-family: Helvetica; color: #000000; line-height: 1.2; pointer-events: all; white-space: normal; word-wrap: normal; ">
+                                main
+                            </div>
+                        </div>
+                    </div>
+                </foreignObject>
+                <text x="127" y="24" fill="#000000" font-family="Helvetica" font-size="12px" text-anchor="middle">
+                    main
+                </text>
+            </switch>
+        </g>
+        <rect x="97" y="50" width="200" height="20" fill="none" stroke="none" pointer-events="all"/>
+        <g transform="translate(-0.5 -0.5)">
+            <switch>
+                <foreignObject style="overflow: visible; text-align: left;" pointer-events="none" width="100%" height="100%" requiredFeatures="http://www.w3.org/TR/SVG11/feature#Extensibility">
+                    <div xmlns="http://www.w3.org/1999/xhtml" style="display: flex; align-items: unsafe center; justify-content: unsafe center; width: 198px; height: 1px; padding-top: 60px; margin-left: 98px;">
+                        <div style="box-sizing: border-box; font-size: 0; text-align: center; ">
+                            <div style="display: inline-block; font-size: 12px; font-family: Helvetica; color: #000000; line-height: 1.2; pointer-events: all; white-space: normal; word-wrap: normal; ">
+                                $s1 - width of  narrowest bar
+                            </div>
+                        </div>
+                    </div>
+                </foreignObject>
+                <text x="197" y="64" fill="#000000" font-family="Helvetica" font-size="12px" text-anchor="middle">
+                    $s1 - width of  narrowest bar
+                </text>
+            </switch>
+        </g>
+        <rect x="73" y="80" width="200" height="20" fill="none" stroke="none" pointer-events="all"/>
+        <g transform="translate(-0.5 -0.5)">
+            <switch>
+                <foreignObject style="overflow: visible; text-align: left;" pointer-events="none" width="100%" height="100%" requiredFeatures="http://www.w3.org/TR/SVG11/feature#Extensibility">
+                    <div xmlns="http://www.w3.org/1999/xhtml" style="display: flex; align-items: unsafe center; justify-content: unsafe center; width: 198px; height: 1px; padding-top: 90px; margin-left: 74px;">
+                        <div style="box-sizing: border-box; font-size: 0; text-align: center; ">
+                            <div style="display: inline-block; font-size: 12px; font-family: Helvetica; color: #000000; line-height: 1.2; pointer-events: all; white-space: normal; word-wrap: normal; ">
+                                text - text to encode
+                            </div>
+                        </div>
+                    </div>
+                </foreignObject>
+                <text x="173" y="94" fill="#000000" font-family="Helvetica" font-size="12px" text-anchor="middle">
+                    text - text to encode
+                </text>
+            </switch>
+        </g>
+        <rect x="117" y="110" width="260" height="30" fill="none" stroke="none" pointer-events="all"/>
+        <g transform="translate(-0.5 -0.5)">
+            <switch>
+                <foreignObject style="overflow: visible; text-align: left;" pointer-events="none" width="100%" height="100%" requiredFeatures="http://www.w3.org/TR/SVG11/feature#Extensibility">
+                    <div xmlns="http://www.w3.org/1999/xhtml" style="display: flex; align-items: unsafe center; justify-content: unsafe center; width: 258px; height: 1px; padding-top: 125px; margin-left: 118px;">
+                        <div style="box-sizing: border-box; font-size: 0; text-align: center; ">
+                            <div style="display: inline-block; font-size: 12px; font-family: Helvetica; color: #000000; line-height: 1.2; pointer-events: all; white-space: normal; word-wrap: normal; ">
+                                for each character invoke the put_char function
+                            </div>
+                        </div>
+                    </div>
+                </foreignObject>
+                <text x="247" y="129" fill="#000000" font-family="Helvetica" font-size="12px" text-anchor="middle">
+                    for each character invoke the put_char func...
+                </text>
+            </switch>
+        </g>
+        <rect x="10" y="200" width="460" height="690" fill="#ffffff" stroke="#000000" pointer-events="all"/>
+        <g transform="translate(-0.5 -0.5)">
+            <switch>
+                <foreignObject style="overflow: visible; text-align: left;" pointer-events="none" width="100%" height="100%" requiredFeatures="http://www.w3.org/TR/SVG11/feature#Extensibility">
+                    <div xmlns="http://www.w3.org/1999/xhtml" style="display: flex; align-items: unsafe center; justify-content: unsafe center; width: 458px; height: 1px; padding-top: 545px; margin-left: 11px;">
+                        <div style="box-sizing: border-box; font-size: 0; text-align: center; ">
+                            <div style="display: inline-block; font-size: 12px; font-family: Helvetica; color: #000000; line-height: 1.2; pointer-events: all; white-space: normal; word-wrap: normal; ">
+                                <div style="color: rgb(212 , 212 , 212) ; background-color: rgb(30 , 30 , 30) ; font-family: &quot;consolas&quot; , &quot;courier new&quot; , monospace ; font-size: 14px ; line-height: 19px">
+                                    <div>
+                                        $a0 - starting x cordinate
+                                    </div>
+                                    <div>
+                                        $a1 - width of thin bar
+                                    </div>
+                                    <div>
+                                        $a2 - character to put
+                                    </div>
+                                    <br/>
+                                    <div>
+                                        For example, when we want to put A:
+                                    </div>
+                                    <div>
+                                        in register $s4 we put sequence:
+                                        <span style="color: #ce9178">
+                                            `100001001`
+                                        </span>
+                                    </div>
+                                    <br/>
+                                    <div>
+                                        $s3 - address of sequence of bits
+                                    </div>
+                                    <div>
+                                        $s4 =
+                                        <span style="color: #ce9178">
+                                            `100001001`
+                                        </span>
+                                    </div>
+                                    <div>
+                                        $s5 =
+                                        <span style="color: #ce9178">
+                                            `100000000`
+                                        </span>
+                                    </div>
+                                    <br/>
+                                    <div>
+                                        $s6 = $s4 AND $s5
+                                    </div>
+                                    <div>
+                                        <span style="color: #ce9178">
+                                            `100001001`
+                                        </span>
+                                        AND
+                                        <span style="color: #ce9178">
+                                            `100000000`
+                                        </span>
+                                        =
+                                        <span style="color: #ce9178">
+                                            `100000000`
+                                        </span>
+                                    </div>
+                                    <br/>
+                                    <div>
+                                        if ($s6 == $s5) $a1 = put_thick_bar($a0, $a1)
+                                    </div>
+                                    <div>
+                                        else $a1 = put_thin_bar($a0, $a1)
+                                    </div>
+                                    <br/>
+                                    <div>
+                                        $s5 =
+                                        <span style="color: #ce9178">
+                                            `010000000`
+                                        </span>
+                                        (shifted right)
+                                    </div>
+                                    <div>
+                                        if ($s5 = 0) return $a0 + $a1
+                                    </div>
+                                    <br/>
+                                    <div>
+                                        $s6 = $s4 AND $s5
+                                    </div>
+                                    <div>
+                                        <span style="color: #ce9178">
+                                            `100001001`
+                                        </span>
+                                        AND
+                                        <span style="color: #ce9178">
+                                            `010000000`
+                                        </span>
+                                        =
+                                        <span style="color: #ce9178">
+                                            `000000000`
+                                        </span>
+                                    </div>
+                                    <br/>
+                                    <div>
+                                        if ($s6 == $s5) $a0 += 2 * $a1 //put thick space
+                                    </div>
+                                    <div>
+                                        else ($s6 == 0) $a0 += $a1  // put thin space
+                                    </div>
+                                    <br/>
+                                    <div>
+                                        $s5 =
+                                        <span style="color: #ce9178">
+                                            `001000000`
+                                        </span>
+                                        (shifted right)
+                                    </div>
+                                    <br/>
+                                    <div>
+                                        go to
+                                    </div>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                </foreignObject>
+                <text x="240" y="549" fill="#000000" font-family="Helvetica" font-size="12px" text-anchor="middle">
+                    $a0 - starting x cordinate...
+                </text>
+            </switch>
+        </g>
+        <rect x="20" y="210" width="140" height="20" fill="none" stroke="none" pointer-events="all"/>
+        <g transform="translate(-0.5 -0.5)">
+            <switch>
+                <foreignObject style="overflow: visible; text-align: left;" pointer-events="none" width="100%" height="100%" requiredFeatures="http://www.w3.org/TR/SVG11/feature#Extensibility">
+                    <div xmlns="http://www.w3.org/1999/xhtml" style="display: flex; align-items: unsafe center; justify-content: unsafe center; width: 138px; height: 1px; padding-top: 220px; margin-left: 21px;">
+                        <div style="box-sizing: border-box; font-size: 0; text-align: center; ">
+                            <div style="display: inline-block; font-size: 12px; font-family: Helvetica; color: #000000; line-height: 1.2; pointer-events: all; white-space: normal; word-wrap: normal; ">
+                                put_char ($a0, $a1, $a2)
+                            </div>
+                        </div>
+                    </div>
+                </foreignObject>
+                <text x="90" y="224" fill="#000000" font-family="Helvetica" font-size="12px" text-anchor="middle">
+                    put_char ($a0, $a1, $a2...
+                </text>
+            </switch>
+        </g>
+        <rect x="210" y="210" width="260" height="20" fill="none" stroke="none" pointer-events="all"/>
+        <g transform="translate(-0.5 -0.5)">
+            <switch>
+                <foreignObject style="overflow: visible; text-align: left;" pointer-events="none" width="100%" height="100%" requiredFeatures="http://www.w3.org/TR/SVG11/feature#Extensibility">
+                    <div xmlns="http://www.w3.org/1999/xhtml" style="display: flex; align-items: unsafe center; justify-content: unsafe center; width: 258px; height: 1px; padding-top: 220px; margin-left: 211px;">
+                        <div style="box-sizing: border-box; font-size: 0; text-align: center; ">
+                            <div style="display: inline-block; font-size: 12px; font-family: Helvetica; color: #000000; line-height: 1.2; pointer-events: all; white-space: normal; word-wrap: normal; ">
+                                draws bars and spaces for a given character
+                            </div>
+                        </div>
+                    </div>
+                </foreignObject>
+                <text x="340" y="224" fill="#000000" font-family="Helvetica" font-size="12px" text-anchor="middle">
+                    draws bars and spaces for a given character
+                </text>
+            </switch>
+        </g>
+        <rect x="150" y="250" width="180" height="20" fill="none" stroke="none" pointer-events="all"/>
+        <g transform="translate(-0.5 -0.5)">
+            <switch>
+                <foreignObject style="overflow: visible; text-align: left;" pointer-events="none" width="100%" height="100%" requiredFeatures="http://www.w3.org/TR/SVG11/feature#Extensibility">
+                    <div xmlns="http://www.w3.org/1999/xhtml" style="display: flex; align-items: unsafe center; justify-content: unsafe center; width: 178px; height: 1px; padding-top: 260px; margin-left: 151px;">
+                        <div style="box-sizing: border-box; font-size: 0; text-align: center; ">
+                            <div style="display: inline-block; font-size: 12px; font-family: Helvetica; color: #000000; line-height: 1.2; pointer-events: all; white-space: normal; word-wrap: normal; ">
+                                Algorithm with exemplary values
+                            </div>
+                        </div>
+                    </div>
+                </foreignObject>
+                <text x="240" y="264" fill="#000000" font-family="Helvetica" font-size="12px" text-anchor="middle">
+                    Algorithm with exemplary values
+                </text>
+            </switch>
+        </g>
+        <path d="M 325 799 L 510 799 Q 520 799 520 789 L 520 500 Q 520 490 510 490 L 331.37 490" fill="none" stroke="#006633" stroke-miterlimit="10" pointer-events="stroke"/>
+        <path d="M 326.12 490 L 333.12 486.5 L 331.37 490 L 333.12 493.5 Z" fill="#006633" stroke="#006633" stroke-miterlimit="10" pointer-events="all"/>
+        <rect x="0" y="950" width="210" height="350" fill="#ffffff" stroke="#000000" pointer-events="all"/>
+        <g transform="translate(-0.5 -0.5)">
+            <switch>
+                <foreignObject style="overflow: visible; text-align: left;" pointer-events="none" width="100%" height="100%" requiredFeatures="http://www.w3.org/TR/SVG11/feature#Extensibility">
+                    <div xmlns="http://www.w3.org/1999/xhtml" style="display: flex; align-items: unsafe center; justify-content: unsafe center; width: 208px; height: 1px; padding-top: 1125px; margin-left: 1px;">
+                        <div style="box-sizing: border-box; font-size: 0; text-align: center; ">
+                            <div style="display: inline-block; font-size: 12px; font-family: Helvetica; color: #000000; line-height: 1.2; pointer-events: all; white-space: normal; word-wrap: normal; ">
+                                <div style="color: rgb(212 , 212 , 212) ; background-color: rgb(30 , 30 , 30) ; font-family: &quot;consolas&quot; , &quot;courier new&quot; , monospace ; font-weight: normal ; font-size: 14px ; line-height: 19px">
+                                    <div>
+                                        <span style="color: #d4d4d4">
+                                            $a0 - starting x
+                                        </span>
+                                    </div>
+                                    <div>
+                                        <span style="color: #d4d4d4">
+                                            $a1 =
+                                        </span>
+                                        <span style="color: #ce9178">
+                                            `STARTING_Y`
+                                        </span>
+                                    </div>
+                                    <div>
+                                        <span style="color: #d4d4d4">
+                                            $s1 - width of thin bar
+                                            <br/>
+                                        </span>
+                                    </div>
+                                    <br/>
+                                    <div>
+                                        <span style="color: #d4d4d4">
+                                            put_pixel($a0, $a1)
+                                        </span>
+                                    </div>
+                                    <div>
+                                        <span style="color: #d4d4d4">
+                                            $a1++
+                                        </span>
+                                    </div>
+                                    <div>
+                                        <span style="color: #d4d4d4">
+                                            if ($a1 &lt;= 40) go to
+                                        </span>
+                                    </div>
+                                    <div>
+                                        <span style="color: #d4d4d4">
+                                            $a0++
+                                        </span>
+                                    </div>
+                                    <div>
+                                        <span style="color: #d4d4d4">
+                                            $s1--
+                                        </span>
+                                    </div>
+                                    <div>
+                                        <span style="color: #d4d4d4">
+                                            if ($s1 == 0) return $a0
+                                        </span>
+                                    </div>
+                                    <div>
+                                        <span style="color: #d4d4d4">
+                                            $a1 =
+                                        </span>
+                                        <span style="color: #ce9178">
+                                            `STARTING_Y`
+                                        </span>
+                                    </div>
+                                    <div>
+                                        <span style="color: #d4d4d4">
+                                            go to
+                                        </span>
+                                    </div>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                </foreignObject>
+                <text x="105" y="1129" fill="#000000" font-family="Helvetica" font-size="12px" text-anchor="middle">
+                    $a0 - starting x...
+                </text>
+            </switch>
+        </g>
+        <rect x="10" y="960" width="140" height="20" fill="none" stroke="none" pointer-events="all"/>
+        <g transform="translate(-0.5 -0.5)">
+            <switch>
+                <foreignObject style="overflow: visible; text-align: left;" pointer-events="none" width="100%" height="100%" requiredFeatures="http://www.w3.org/TR/SVG11/feature#Extensibility">
+                    <div xmlns="http://www.w3.org/1999/xhtml" style="display: flex; align-items: unsafe center; justify-content: unsafe center; width: 138px; height: 1px; padding-top: 970px; margin-left: 11px;">
+                        <div style="box-sizing: border-box; font-size: 0; text-align: center; ">
+                            <div style="display: inline-block; font-size: 12px; font-family: Helvetica; color: #000000; line-height: 1.2; pointer-events: all; white-space: normal; word-wrap: normal; ">
+                                put_thin_bar($a0, $s1)
+                            </div>
+                        </div>
+                    </div>
+                </foreignObject>
+                <text x="80" y="974" fill="#000000" font-family="Helvetica" font-size="12px" text-anchor="middle">
+                    put_thin_bar($a0, $s1)
+                </text>
+            </switch>
+        </g>
+        <path d="M 189 1136.9 L 230 1136.98 Q 240 1137 240 1127 L 240 1107 Q 240 1097 230 1097 L 192.43 1097" fill="none" stroke="#009900" stroke-miterlimit="10" pointer-events="stroke"/>
+        <path d="M 187.18 1097 L 194.18 1093.5 L 192.43 1097 L 194.18 1100.5 Z" fill="#009900" stroke="#009900" stroke-miterlimit="10" pointer-events="all"/>
+        <path d="M 136.08 1230 L 230 1230 Q 240 1230 240 1220 L 240 1116.37" fill="none" stroke="#009900" stroke-miterlimit="10" pointer-events="stroke"/>
+        <path d="M 240 1111.12 L 243.5 1118.12 L 240 1116.37 L 236.5 1118.12 Z" fill="#009900" stroke="#009900" stroke-miterlimit="10" pointer-events="all"/>
+        <rect x="260" y="1020" width="240" height="210" fill="#ffffff" stroke="#000000" pointer-events="all"/>
+        <g transform="translate(-0.5 -0.5)">
+            <switch>
+                <foreignObject style="overflow: visible; text-align: left;" pointer-events="none" width="100%" height="100%" requiredFeatures="http://www.w3.org/TR/SVG11/feature#Extensibility">
+                    <div xmlns="http://www.w3.org/1999/xhtml" style="display: flex; align-items: unsafe center; justify-content: unsafe center; width: 238px; height: 1px; padding-top: 1125px; margin-left: 261px;">
+                        <div style="box-sizing: border-box; font-size: 0; text-align: center; ">
+                            <div style="display: inline-block; font-size: 12px; font-family: Helvetica; color: #000000; line-height: 1.2; pointer-events: all; white-space: normal; word-wrap: normal; ">
+                                <div style="color: rgb(212 , 212 , 212) ; background-color: rgb(30 , 30 , 30) ; font-family: &quot;consolas&quot; , &quot;courier new&quot; , monospace ; font-weight: normal ; font-size: 14px ; line-height: 19px">
+                                    <div>
+                                        <span style="color: #d4d4d4">
+                                            $a0 - starting x
+                                        </span>
+                                    </div>
+                                    <div>
+                                        <span style="color: #d4d4d4">
+                                            $s1 - width of thin bar
+                                        </span>
+                                    </div>
+                                    <br/>
+                                    <div>
+                                        <span style="color: #d4d4d4">
+                                            $a0 = put_thin_bar($a0, $s1)
+                                        </span>
+                                    </div>
+                                    <div>
+                                        <span style="color: #d4d4d4">
+                                            $a0 = put_thin_bar($a0, $s1)
+                                        </span>
+                                    </div>
+                                    <div>
+                                        <span style="color: #d4d4d4">
+                                            return $a0
+                                        </span>
+                                    </div>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                </foreignObject>
+                <text x="380" y="1129" fill="#000000" font-family="Helvetica" font-size="12px" text-anchor="middle">
+                    $a0 - starting x...
+                </text>
+            </switch>
+        </g>
+        <rect x="260" y="1030" width="150" height="20" fill="none" stroke="none" pointer-events="all"/>
+        <g transform="translate(-0.5 -0.5)">
+            <switch>
+                <foreignObject style="overflow: visible; text-align: left;" pointer-events="none" width="100%" height="100%" requiredFeatures="http://www.w3.org/TR/SVG11/feature#Extensibility">
+                    <div xmlns="http://www.w3.org/1999/xhtml" style="display: flex; align-items: unsafe center; justify-content: unsafe center; width: 148px; height: 1px; padding-top: 1040px; margin-left: 261px;">
+                        <div style="box-sizing: border-box; font-size: 0; text-align: center; ">
+                            <div style="display: inline-block; font-size: 12px; font-family: Helvetica; color: #000000; line-height: 1.2; pointer-events: all; white-space: normal; word-wrap: normal; ">
+                                put_thick_bar($a0, $s1)
+                            </div>
+                        </div>
+                    </div>
+                </foreignObject>
+                <text x="335" y="1044" fill="#000000" font-family="Helvetica" font-size="12px" text-anchor="middle">
+                    put_thick_bar($a0, $s1)
+                </text>
+            </switch>
+        </g>
+    </g>
+    <switch>
+        <g requiredFeatures="http://www.w3.org/TR/SVG11/feature#Extensibility"/>
+        <a transform="translate(0,-5)" xlink:href="https://www.diagrams.net/doc/faq/svg-export-text-problems" target="_blank">
+            <text text-anchor="middle" font-size="10px" x="50%" y="100%">
+                Viewer does not support full SVG 1.1
+            </text>
+        </a>
+    </switch>
+</svg>

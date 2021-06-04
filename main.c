@@ -1,10 +1,13 @@
 #include <stdio.h>
 #include <stdlib.h>
+#include <string.h>
 
 extern int put_pixel(char* pixels, int x, int y);
 extern int put_thin_bar(char* pixels, int x, int width);
 extern int put_thick_bar(char* pixels, int x, int width);
 extern int put_char(char* pixels, int x, int width, char character);
+extern int encode39(char* pixels, int width, char* text);
+
 
 char* read_from_file();
 char* write_to_file(char* buff);
@@ -13,41 +16,39 @@ unsigned int len;
 
 int main(int argc, char** argv)
 {
+    if(argc !=  3)
+    {
+        printf("Error: Incorrect number of arguments.\n");
+        printf("Correct syntax: ./program width_of_narrow_bar(1, 2 or 3) text_to_be_encoded(max 9 characters).\n ");
+        return 2;
+    }
+
+    int width = atoi(argv[1]);
+    if (width < 1 || width > 3) {
+        printf("Error: Width must be 1, 2 or 3.\n");
+        return 3;
+    }
+
+    char* text = argv[2];
+    if (strlen(text) > 9) {
+        printf("Error: Length of text to encode must be between 1 and 9 characters.\n");
+        return 4;
+    }
+
+    printf("width: %d, text: %s\n", width, text);
+
     char* buff = read_from_file();
     char* pixels = buff + 10;
     pixels = buff + pixels[0];
     // pixels pointer now points to the pixels section of .bmp
-//    if(ret == -1) {
-//        printf("Error 1: Text contains characters which cannot be encoded");
-//        return 1;
-//    }
-//    printf("return value: %d ", ret);
 
-    int ret = 10;
-    ret = put_char(pixels, ret, 2, '*');
-    ret = put_char(pixels, ret, 2, 'B');
-    ret = put_char(pixels, ret, 2, 'A');
-    ret = put_char(pixels, ret, 2, 'C');
-    ret = put_char(pixels, ret, 2, 'A');
-    put_char(pixels, ret, 2, '*');
-
-
-//    put_pixel(pixels, 20, 20);
-//    int ret = put_thick_bar(pixels, 20, 2);
-
-//    put_thin_bar(pixels, ret, 2);
+    int ret = encode39(pixels, width, text);
+    if(ret == -1) {
+        printf("Error: Text contains characters which cannot be encoded");
+        return 1;
+    }
 
     write_to_file(buff);
-
-
-//    if(argc !=  2)
-//    {
-//        printf("Input argument was not specified correctly! \n ");
-//        return -1;
-//    }
-
-//    if (result == 0) printf("No shape found.\n");
-//    else printf("Shape %i found.\n\n\n", result);
 
     return 0;
 }
@@ -58,10 +59,10 @@ char* read_from_file() {
     imgFile = fopen("white.bmp", "rb");
     if (imgFile == NULL)
     {
-        printf("Failed to open file\n");
+        printf("Failed to open white.bmp\n");
         exit(-1);
     }
-    else printf("File opened successfully\n");
+    else printf("white.bmp opened successfully\n");
 
     fseek(imgFile, 0, SEEK_END); /* move file pointer to end of file */
     len = ftell(imgFile); /* get offset from beginning of the file */
@@ -95,11 +96,6 @@ char* write_to_file(char* buff) {
     }
     else printf("File to write to opened successfully\n");
 
-//    int width =*(int * )( & buff[18] ); // width = 600
-//    int width = 600;
-//    int height =*(int * )( & buff[22] ); // height = 50
-//    int height = 50;
-    int size = ((600 * 3 + 3) & ~3) * 50 + 54;
     fwrite(buff, len, 1, imgFile);
     fclose(imgFile);
 
