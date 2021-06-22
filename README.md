@@ -1,5 +1,13 @@
 # Barcode generator
 
+## This project is the 3rd in a series on Assembly programming
+1. MIPS Assembly
+* [Short programming tasks solved](https://github.com/whiteeagle44/MIPS-Assembly)
+* [Program generating barcode for a given string](https://github.com/whiteeagle44/barcode-generator)
+2. x86 Assembly 
+* [Program generating barcode in 32-bit x86 NASM](https://github.com/whiteeagle44/barcode-generator-x86) **(You're here)**
+* [Tutorial on how to configure an IDE for x86 NASM on Linux](https://www.eagle44.io/blog/how-to-configure-an-ide-for-x86-nasm-on-linux/)
+
 ## About
 This program generates a [Code 39](https://en.wikipedia.org/wiki/Code_39) barcode for a given string. In other words, it draws the appropriate sequences of bars and spaces into a bmp file.
 
